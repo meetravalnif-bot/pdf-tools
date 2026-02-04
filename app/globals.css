@@ -1,0 +1,15 @@
+:root{
+  --orange:#ff7a18;
+  --orange-dark:#e56700;
+  --black:#0f0f10;
+  --bg:#f7f7f7;
+  --text:#111;
+  --muted:#666;
+  --border:#e6e6e6;
+}
+
+*{ box-sizing:border-box; }
+html,body{ padding:0; margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial; }
+body{ background: var(--bg); color: var(--text); }
+
+a{ color: inherit; text-decoration: none; }
