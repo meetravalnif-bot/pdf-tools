@@ -92,7 +92,10 @@ export default function ImageToPdfTool({
       }
 
       const pdfBytes = await pdfDoc.save();
-      const blob = new Blob([pdfBytes], { type: "application/pdf" });
+      const blob = new Blob([pdfBytes.buffer.slice(pdfBytes.byteOffset, pdfBytes.byteOffset + pdfBytes.byteLength)], {
+  type: "application/pdf",
+});
+
 
       const a = document.createElement("a");
       a.href = URL.createObjectURL(blob);
