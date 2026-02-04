@@ -1,5 +1,5 @@
-import ImageToPdfTool from "../components/ImageToPdfTool";
+import { redirect } from "next/navigation";
 
-export default function Page() {
-  return <ImageToPdfTool showSchema={true} />;
+export default function Home() {
+  redirect("/image-to-pdf");
 }
